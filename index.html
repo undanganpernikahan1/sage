@@ -454,6 +454,53 @@
       </div>
     </section>
 
+    <!-- ================= SECTION: FOTO MASA KECIL ================= -->
+    <section id="childhood" class="py-20 px-6 bg-sage-950 text-white border-t border-champagne-500/20 transition-theme overflow-hidden">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16 reveal reveal-fade-down">
+          <p class="font-theme-sans tracking-[0.2em] text-[10px] text-champagne-500 uppercase mb-2">Memori Indah</p>
+          <h2 class="font-theme-accent text-4xl md:text-5xl text-champagne-500">
+            Our Childhood Memories
+          </h2>
+          <p class="text-xs md:text-sm text-gray-300 max-w-md mx-auto mt-4 leading-relaxed">
+            Kilas balik lembaran kisah kenangan masa kecil kami yang begitu berharga.
+          </p>
+        </div>
+
+        <!-- Foto Sendiri (Atas) -->
+        <div class="mb-14">
+          <h3 class="font-theme-serif text-center text-lg text-champagne-300 mb-6 uppercase tracking-widest text-xs">Masa Kecil Kami</h3>
+          <div class="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <div class="relative overflow-hidden rounded-2xl border-2 border-champagne-500 group cursor-pointer reveal reveal-fade-right" onclick="openLightbox('9236b345-02b9-4841-9045-90095bb145f9.jpeg')">
+              <img src="9236b345-02b9-4841-9045-90095bb145f9.jpeg" alt="Dian Masa Kecil" class="w-full h-64 md:h-80 object-cover transform group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-center">
+                <span class="text-[11px] md:text-xs font-semibold text-champagne-300 font-theme-serif">Dian Nirwanti</span>
+              </div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl border-2 border-champagne-500 group cursor-pointer reveal reveal-fade-left" onclick="openLightbox('f91ca8d2-2d70-432b-b508-57e4d13883ee.jpeg')">
+              <img src="f91ca8d2-2d70-432b-b508-57e4d13883ee.jpeg" alt="Mufidz Masa Kecil" class="w-full h-64 md:h-80 object-cover transform group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-center">
+                <span class="text-[11px] md:text-xs font-semibold text-champagne-300 font-theme-serif">Abdul Mufidz</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto Bareng (Bawah) -->
+        <div>
+          <h3 class="font-theme-serif text-center text-lg text-champagne-300 mb-6 uppercase tracking-widest text-xs">Tumbuh Bersama</h3>
+          <div class="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <div class="relative overflow-hidden rounded-2xl border-2 border-champagne-500 group cursor-pointer reveal reveal-scale-up delay-100" onclick="openLightbox('73dbcc8e-ecfe-4486-b9ee-0758a53ab0ac.jpeg')">
+              <img src="73dbcc8e-ecfe-4486-b9ee-0758a53ab0ac.jpeg" alt="Foto Bersama 1" class="w-full h-64 md:h-80 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="relative overflow-hidden rounded-2xl border-2 border-champagne-500 group cursor-pointer reveal reveal-scale-up delay-200" onclick="openLightbox('c181883b-d3c5-406a-8e42-eb07dc5e82fa.jpeg')">
+              <img src="c181883b-d3c5-406a-8e42-eb07dc5e82fa.jpeg" alt="Foto Bersama 2" class="w-full h-64 md:h-80 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ================= SECTION 5: KADO DIGITAL (REKENING) ================= -->
     <section id="gift" class="bg-batik-light py-20 px-6 text-sage-950 transition-theme overflow-hidden">
       <div class="max-w-4xl mx-auto">
@@ -1032,6 +1079,7 @@
       lightbox.classList.add('flex');
     }
 
+    // Daftarkan fungsi ke scope global window agar bisa diakses oleh onclick tag HTML
     function closeLightbox() {
       document.getElementById('lightbox').classList.add('hidden');
     }
@@ -1050,4 +1098,4 @@
     window.closeLightbox = closeLightbox;
   </script>
 </body>
-</html>
+</html>>
